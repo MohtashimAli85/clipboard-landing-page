@@ -51,7 +51,7 @@ body {
   font: 700 1.3rem "Bai Jamjuree", sans-serif;
   padding: 1rem 0.5rem;
   color: #ffffff;
-  min-width: 220px;
+  min-width: 240px;
 }
 .btns .btn + .btn {
   margin-top: 1.5rem;
