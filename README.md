@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/MohtashimAli85/clipboard-landing-page)
-- Live Site URL: [Vercel](https://your-live-site-url.com)
+- Live Site URL: [Vercel](https://clipboard-landing-page-black.vercel.app/)
 
 ## My process
 
