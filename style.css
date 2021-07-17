@@ -184,29 +184,7 @@ ul {
   .main .hero-heading {
     font-size: 2.3rem;
   }
-  .main .section-one {
-    display: flex;
-    justify-content: flex-end;
-    text-align: left;
-    position: relative;
-    width: 100%;
-  }
-  .section-one .computer-img {
-    max-width: 752px;
-    max-height: 572px;
-    position: absolute;
-    inset: 0;
-    left: -4rem;
-  }
-  .section-one .items {
-    width: 37%;
-  }
-  .items .item + .item {
-    margin-top: 0;
-  }
-  .section-one .items .item + .item {
-    margin-top: 4.5rem;
-  }
+
   .main .light-txt {
     font-size: 1.1rem;
   }
@@ -217,9 +195,15 @@ ul {
     font-size: 1.02rem;
     width: 80%;
   }
+  .section-one .item .light-txt {
+    width: 100%;
+  }
   .main .devices-img {
     max-height: 572px;
     max-width: 900px;
+  }
+  .items .item + .item {
+    margin-top: 0;
   }
   .items-2 {
     display: flex;
@@ -235,9 +219,13 @@ ul {
   .items-2 {
     margin-bottom: 9rem;
   }
-  .brands .brand + .brand {
+  .brands .brand:nth-child(even) {
     margin-top: 0rem;
     margin-left: 7rem;
+    margin-right: 7rem;
+  }
+  .brands .brand {
+    margin-top: 4rem !important;
   }
   .items-2 .item {
     flex-basis: 100%;
@@ -261,11 +249,46 @@ ul {
     display: flex;
     flex-wrap: wrap;
   }
+  .brands {
+    justify-content: center;
+    align-items: center;
+  }
   .footer .items {
     margin-top: 0;
   }
   .footer .items .item + .item {
     margin-left: 1.5rem;
     margin-top: 0;
+  }
+}
+@media (min-width: 1000px) {
+  .brands .brand:nth-child(even) {
+    margin: 0;
+  }
+  .brands .brand + .brand {
+    margin-left: 7rem;
+  }
+}
+@media (min-width: 1190px) {
+  .main .section-one {
+    display: flex;
+    justify-content: flex-end;
+    text-align: left;
+    position: relative;
+    width: 100%;
+  }
+  .section-one .computer-img {
+    max-width: 752px;
+    max-height: 572px;
+    position: absolute;
+    inset: 0;
+    left: -4rem;
+  }
+  .section-one .items {
+    width: 37%;
+  }
+
+  .section-one .items .item + .item {
+    margin-top: 4.5rem;
   }
 }
