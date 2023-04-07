@@ -158,7 +158,7 @@ ul {
   }
   .header {
     background: url("images/bg-header-desktop.png") no-repeat;
-    /* background-size: cover; */
+    background-size: cover;
   }
   .header .logo {
     margin-top: 7rem;
